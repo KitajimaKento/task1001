@@ -1,9 +1,17 @@
+header {
+  background: white;
+  height: 80px;
+}
+
+header > nav > ul {
+  display: flex;
+}
+
 /* main-image */
 .main-image > img {
   width: 100%;
   margin-bottom: -2px;
 }
-
 
 
 /* service */
@@ -14,8 +22,8 @@
 }
 
 .box {
-  width: 70%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -23,8 +31,7 @@
 .content-title {
   text-align: left;
   margin: 0 auto;
-  width: 70%;
-  color: rgb(21,144,160);
+  width: 85%;
   padding: 20px 0;
   font-size: 50px;
 }
@@ -38,45 +45,56 @@
   font-size: 50px;
 }
 
-.content {
-  /* width: 100px; */
-  margin: 0 auto;
+.service-content, .customer-voice-content {
+  text-align: center;
   word-wrap: break-word;
 }
 
-.container {
-  width: 200px;
+.service-content img {
+  width: 330px;
+  height: 330px;
 }
 
-.container > img {
-  display: inline-block;
+.service-content > p {
+  color: white;
+  margin: 40px 0;
+}
+
+.service-content p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.service-content p:nth-of-type(2) {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.container {
+  width: 330px;
 }
 
 /* お客様の声 */
-
-.gray-linebox {
-  background: gray;
-  padding: 100px 0;
-}
-
-
-
-/* お問い合わせ */
 
 .white-linebox {
   background: white;
   padding: 100px 0;
 }
 
+/* お問い合わせ */
+
+.gray-linebox {
+  background: gray;
+  padding: 100px 0;
+}
 
 .contact-box {
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 40px auto;
   background: gray;
   margin-bottom: 20px;
 }
 
-.contact-box > input {
+.contact-box > label > input {
   height: 30px;
   width: 100%;
   margin-top: 5px;
@@ -98,6 +116,7 @@
   width: 100px;
   border:1px solid #38aef0;
   color: #38aef0;
+  border-radius: 20px;
 }
 
 .button:hover {
@@ -115,9 +134,10 @@
 }
 
 
-/* ここから下がボタンのCSS*/
-
-
+/* ぼやっとした線消す */
+.button:focus {
+	outline:0;
+}
 
 
 /* footer */
@@ -130,4 +150,14 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* color */
+
+.white {
+  color: white;
+}
+
+.skyblue {
+  color: #38aef0;
 }
