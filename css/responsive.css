@@ -1,7 +1,74 @@
 @media screen and (max-width: 480px) {
 
-footer {
-  background: white;
-}
+  .list02 {
+    display: none;
+  }
+
+  .test2 > img {
+    margin-left: 2px;
+  }
+
+  .list03 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+  }
+
+  .list03 > li {
+    margin: 0 40%;
+  }
+
+  .list03 > li > a {
+    color: rgb(113,113,113);
+    padding: 100% 0;
+  }
+
+  .list03 > li > a:active {
+    color: #38aef0;
+  }
+
+  .blue-linebox {
+    padding: 30px 0;
+  }
+
+  .content-title {
+    text-align: center;
+  }
+
+  .box {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content-title {
+    font-size: 35px;
+  }
+
+  .service-content {
+    margin: 0 30px;
+  }
+
+  .service-content img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  /* お問い合わせ */
+  .content-title-info {
+    font-size: 30px;
+  }
+
+  .contact-box{
+    width: 90%;
+  }
 
 }

@@ -37,6 +37,10 @@ margin-right: 30px;
   color: #38aef0;
 }
 
+.list03 {
+  display: none;
+}
+
 
 
 /* main-image部分 */
@@ -80,11 +84,10 @@ margin-right: 30px;
   text-align: center;
   margin: 0 auto;
   width: 70%;
-  padding: 20px 0;
   font-size: 50px;
 }
 
-.service-content, .customer-voice-content {
+.service-content {
   text-align: center;
   word-wrap: break-word;
 }
@@ -154,7 +157,7 @@ margin-right: 30px;
 
 .white-linebox {
   background: white;
-  padding: 100px 0;
+  margin: 100px auto;
 }
 
 .customer-voice {
@@ -280,4 +283,8 @@ footer > h1 {
 
 .skyblue {
   color: #38aef0;
+}
+
+.orange {
+  color: rgb(244,130,34)
 }
