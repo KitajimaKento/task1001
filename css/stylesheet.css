@@ -1,67 +1,64 @@
 /* ヘッダー部分 */
 header {
-  background: white;
+  background: rgb(255,255,255);
   height: 100%;
 }
 
-.test2 {
+.header-container {
   display: flex;
+  border-bottom: 5px solid rgb(164,25,25);
 }
 
-.test2 > img {
+.header-container > img {
   width: 250px;
   height: 50px;
   margin: 10px;
+  cursor: pointer;
 }
 
-.list02 {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-list-style: none;
-margin-left: auto;
-margin-right: 30px;
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 30px;
 }
 
-.list02 > li {
+.nav-list > li {
   margin: 0 10px;
 }
 
-.list02 > li > a {
+.nav-list > li > a {
   text-decoration: none;
   color: rgb(113,113,113);
   padding: 100% 0;
 }
 
-.list02 > li > a:hover {
-  color: #38aef0;
+.nav-list > li > a:hover {
+  color: rgb(56,174,240);
 }
 
-.list03 {
+.nav-list-responsive {
   display: none;
 }
 
-
-
 /* main-image部分 */
+
+.main-image {
+  background-image: url("images/kyuhun3.jpg")
+}
+
 .main-image img {
   width: 100%;
   margin-bottom: -2px;
 }
 
-/* .main-image > img:hover {
-  opacity: 0;
-  transition: 0.9s;
-} */
-
-
-
 /* サービス一覧部分 */
-.blue-linebox {
+.blue-line-wrapper {
   background-color: rgb(51,189,209);
   background-image: repeating-linear-gradient(45deg,rgb(49,182,198), rgb(49,182,198) 3px,transparent 0, transparent 6px);
   padding: 100px 0;
-  /* overflow: scroll; /* はみ出た部分をスクロールで表示 */
 }
 
 .box {
@@ -78,7 +75,6 @@ margin-right: 30px;
   padding: 20px 0;
   font-size: 50px;
 }
-
 
 .content-title-info {
   text-align: center;
@@ -105,7 +101,7 @@ margin-right: 30px;
 }
 
 .service-content > p {
-  color: white;
+  color: rgb(255,255,255);
   margin: 40px 0;
 }
 
@@ -122,42 +118,10 @@ margin-right: 30px;
   width: 330px;
 }
 
-/* サービス一覧のボタン */
-.black-button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  height: 30px;
-  width: 100px;
-  border:1px solid #38aef0;
-  color: #38aef0;
-}
-
-.black-button:hover {
-  transition: 0.5s;
-  outline: none;
-  background-color: #38aef0;
-  color: white;
-}
-
-.black-button:active {
-  transition: 0s;
-  box-shadow: none;
-  background-color: white;
-  color: #38aef0;
-}
-
-.test {
-  display: flex;
-}
-
-
-
 /* お客様の声部分 */
-
-.white-linebox {
-  background: white;
-  margin: 100px auto;
+.wrapper {
+  margin: 0px auto;
+  padding: 100px 0;
 }
 
 .customer-voice {
@@ -166,7 +130,7 @@ margin-right: 30px;
   display: flex;/* ↓上下中央寄せ */
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(255,255,255);
   font-weight: bold;
 }
 
@@ -179,75 +143,65 @@ margin-right: 30px;
   margin: 30px auto;
 }
 
-.test3 {
+.customer-content {
   border: 3px solid rgb(244,130,34);
 }
 
-.test3 > p:nth-of-type(1) {
+.customer-content > p:nth-of-type(1) {
   text-align: center;
   color: black;
 }
 
-.test3 > p {
+.customer-content > p {
   margin: 30px;
   color: rgb(113,113,113);
   line-height: 1.5;
 }
 
-
 /* お問い合わせ部分 */
-.gray-linebox {
-  background: #F2F2F2;
-  padding: 100px 0;
-}
-
-.contact-box {
+.contact-content, .content-title-info + form {
   width: 70%;
   margin: 40px auto;
-  margin-bottom: 20px;
 }
 
-.contact-box > label > input {
+.contact-content > label > input {
   height: 30px;
   width: 100%;
   margin-top: 5px;
 }
 
-.contact-box > textarea {
+.contact-content > textarea {
   margin-top: 5px;
   width: 100%;
   border: 1px solid rgb(213,213,213);
 }
 
-
 /* 送信ボタン部分 */
-.blue-button {
+.button {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-
   height: 40px;
   width: 200px;
-  border:1px solid #38aef0;
-  color: #38aef0;
+  border:1px solid rgb(56,174,240);
+  color: rgb(56,174,240);
   border-radius: 20px;
   outline:0;
 }
 
-.blue-button:hover {
+.button:hover {
   transition: 0.5s;
   outline: none;
-  background-color: #38aef0;
-  color: white;
+  background-color: rgb(56,174,240);
+  color: rgb(255,255,255);
 }
 
-.blue-button:active {
+.button:active {
   transition: 0s;
   box-shadow: none;
-  background-color: white;
-  color: #38aef0;
+  background-color: rgb(255,255,255);
+  color: rgb(56,174,240);
 }
-
 
 /* footer部分 */
 footer {
@@ -257,34 +211,30 @@ footer {
   color: rgb(255,255,255);
 }
 
-footer > h1 {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 40px;
-  font-family: monospace;
-}
-
-.logo {
+.footer-logo {
   text-align: center;
   padding-top: 30px;
 }
 
-.logo > img {
+.footer-logo > img {
   width: 200px;
   height: 40px;
+  cursor: pointer;
 }
 
-
-/* color */
-
+/* color一覧 */
 .white {
-  color: white;
+  color: rgb(255,255,255);
 }
 
 .skyblue {
-  color: #38aef0;
+  color: rgb(56,174,240);
 }
 
 .orange {
   color: rgb(244,130,34)
+}
+
+.gray-b {
+  background: rgb(242,242,242);
 }

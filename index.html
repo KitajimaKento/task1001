@@ -10,47 +10,42 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/reset.css">
     <title>台湾旅行ツアー | 謝謝旅行</title>
-
   </head>
   <body>
-
     <header>
-      <div class="test2">
+      <div class="header-container">
         <img src="images/logo1.png" alt="ヘッダーロゴの画像">
-        <!-- 真ん中になにかほしい -->
-          <ul class="list02">
+          <ul class="nav-list">
             <li><a href="#">ご予約</a></li>
             <li><a href="#">お問い合わせ</a></li>
             <li><a href="#">ヘルプ</a></li>
           </ul>
           <!-- レスポンシブ用 -->
-          <ul class="list03">
-            <li><a href="#"><i class="fas fa-info"></i></a></li>
+          <ul class="nav-list-responsive">
+            <li><a href="#"><i class="fas fa-suitcase-rolling"></i></a></li>
             <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
             <li><a href="#"><i class="fas fa-question-circle"></i></a></li>
           </ul>
       </div>
     </header>
-
     <main>
         <!-- イメージ画像 -->
         <div class="main-image">
-          <img src="images/kyuhun.jpg" alt="九份の画像"> <!-- image画像に文字入れる 開いた瞬間、画像の下に画像を入れて(同じ画像)下の画像にもじを入れる-->
+          <img src="images/kyuhun.jpg" alt="九份の画像">
         </div>
-
         <!-- サービス紹介 -->
         <section>
-          <div class="blue-linebox">
+          <div class="blue-line-wrapper">
             <h1 class="content-title white">サービス一覧</h1>
-
             <div class="box">
+
               <div class="container">
                 <div class="service-content">
                   <img src="images/101.jpg" alt="台北101の画像">
                   <p>- 台北101ツアー -</p>
                   <p>
                     世界的に知名度を誇るランドマーク「台北101」も外せないスポットです。<br>
-                    特に年越しの花火の雄大な景観は世界からのツーリスト、地元の人々を魅了しています。5000円。
+                    特に年越しの花火の雄大な景観は世界からのツーリスト、地元の人々を魅了しています。
                   </p>
                 </div>
               </div>
@@ -61,7 +56,7 @@
                   <p>- 九份ツアー -</p>
                   <p>
                     台湾に行ったら外せない九份観光。<br>
-                    台北からちょっと足を伸ばして日帰りで行ける、台湾屈指の人気観光地。5000円。
+                    台北からちょっと足を伸ばして日帰りで行ける、台湾屈指の人気観光地。
                   </p>
                 </div>
               </div>
@@ -72,25 +67,20 @@
                   <p>- 士林夜市ツアー -</p>
                   <p>
                     B級グルメの宝庫「夜市」。<br>
-                    特に台北北部にある「士林夜市」は台湾で最も有名な夜市で、毎日地元の人や世界中からの観光客が訪れます。5000円。
+                    特に台北北部にある「士林夜市」は台湾で最も有名な夜市で、毎日地元の人や世界中からの観光客が訪れます。
                   </p>
                 </div>
               </div>
 
             </div>
-
           </div>
-
         </section>
-
-
         <!-- お客様の声 -->
         <section>
-          <div class="white-linebox">
+          <div class="wrapper">
             <h1 class="content-title orange">お客様の声</h1>
-
             <div class="box">
-              <div class="container test3">
+              <div class="container customer-content">
                 <h2 class="customer-voice">台北 101ツアー</h2>
                 <img src="images/woman1.jpg" alt="女性1の画像">
                 <p>斎藤さん(22) 大学生</p>
@@ -98,10 +88,9 @@
                   リーズナブルなプランで十分楽しめました!<br>
                   初海外だったので、日本人のガイドがいてくれて安心でした。
                 </p>
-
               </div>
 
-              <div class="container test3">
+              <div class="container customer-content">
                 <h2 class="customer-voice">九份ツアー</h2>
                 <img src="images/woman2.jpg" alt="女性2の画像">
                 <p>工藤さん(25) 会社員</p>
@@ -109,10 +98,9 @@
                   九份は行くまでが不安だったのですが、ツアーのおかげで楽しく観光できました。<br>
                   きれいなスポットも教えてくれて大満足です。
                 </p>
-
               </div>
 
-              <div class="container test3">
+              <div class="container customer-content">
                 <h2 class="customer-voice">士林夜市ツアー</h2>
                 <img src="images/food.jpg" alt="料理の画像">
                 <p>川村さん(30) 自営業</p>
@@ -120,52 +108,39 @@
                   士林夜市は日本にない空気を味わえて、最高でしたね。<br>
                   一番楽しめるコースを用意してくれたおかげで、ストレスなく観光できました。
                 </p>
-
-            </div>
-
+              </div>
           </div>
         </section>
-
-
         <!-- お問い合わせ -->
         <section>
-
-          <div class="gray-linebox">
+          <div class="wrapper gray-b">
             <h1 class="content-title-info skyblue">お問い合わせ</h1>
+            <form>
+              <div class="contact-content">
+                <label>名前
+                  <input type="text" placeholder="名前を入力">
+                </label>
+              </div>
 
-            <div class="contact-box">
+              <div class="contact-content">
+                <label>メール
+                  <input type="email" placeholder="メールアドレスを入力">
+                </label>
+              </div>
 
-              <form>
-                <div class="contact-box">
-                  <label>名前
-                    <input type="text" placeholder="名前を入力">
-                  </label>
-                </div>
+              <div class="contact-content">
+                <label>本文</label>
+                <textarea rows="10" placeholder="コメントを入力"></textarea>
+              </div>
 
-                <div class="contact-box">
-                  <label>メール
-                    <input type="email" placeholder="メールアドレスを入力">
-                  </label>
-                </div>
-
-                <div class="contact-box">
-                  <label>本文</label>
-                  <textarea rows="10" placeholder="コメントを入力"></textarea>
-                </div>
-
-                <input class="blue-button" type="submit">
-              </form>
-
-            </div>
+              <input class="button" type="submit">
+            </form>
           </div>
         </section>
-
     </main>
-
     <footer>
-      <div class="logo">
+      <div class="footer-logo">
         <img src="images/logo2.png" alt="フッターロゴの画像">
-        <!-- ここにTwitterとかのli入れる -->
       </div>
     </footer>
   </body>
