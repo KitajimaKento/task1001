@@ -1,11 +1,42 @@
 header {
   background: white;
-  height: 80px;
+  height: 100%;
 }
 
-header > nav > ul {
+.test2 {
   display: flex;
 }
+
+.test2 > img {
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+
+}
+
+.list02 {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+margin-left: auto;
+margin-right: 30px;
+}
+
+.list02 > li {
+  margin: 0 10px;
+}
+
+.list02 > li > a {
+  text-decoration: none;
+  color: rgb(113,113,113);
+  padding: 100% 0;
+}
+
+.list02 > li > a:hover {
+  color: #38aef0;
+}
+
 
 /* main-image */
 .main-image > img {
@@ -14,7 +45,7 @@ header > nav > ul {
 }
 
 
-/* service */
+/* サービス一覧 */
 .blue-linebox {
   background-color: rgb(51,189,209);
   background-image: repeating-linear-gradient(45deg,rgb(49,182,198), rgb(49,182,198) 3px,transparent 0, transparent 6px);
@@ -36,11 +67,11 @@ header > nav > ul {
   font-size: 50px;
 }
 
+
 .content-title-info {
   text-align: center;
   margin: 0 auto;
   width: 70%;
-  color: rgb(0,0,0);
   padding: 20px 0;
   font-size: 50px;
 }
@@ -53,6 +84,7 @@ header > nav > ul {
 .service-content img {
   width: 330px;
   height: 330px;
+  border-radius: 20px;
 }
 
 .service-content > p {
@@ -73,24 +105,89 @@ header > nav > ul {
   width: 330px;
 }
 
+/* サービス一覧のボタン */
+.black-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 30px;
+  width: 100px;
+  border:1px solid #38aef0;
+  color: #38aef0;
+}
+
+.black-button:hover {
+  transition: 0.5s;
+  outline: none;
+  background-color: #38aef0;
+  color: white;
+}
+
+.black-button:active {
+  transition: 0s;
+  box-shadow: none;
+  background-color: white;
+  color: #38aef0;
+}
+
+.test {
+  display: flex;
+}
+
 /* お客様の声 */
+
 
 .white-linebox {
   background: white;
   padding: 100px 0;
 }
 
+.customer-voice {
+  height: 30px;
+  background: rgb(244,130,34);
+  display: flex;/* ↓上下中央寄せ */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.customer-voice + img {
+  width: 230px;
+  height: 230px;
+  margin-top: 20px;
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto;
+}
+
+.test3 {
+  border: 3px solid rgb(244,130,34);
+}
+
+.test3 > p:nth-of-type(1) {
+  text-align: center;
+  color: black;
+}
+
+.test3 > p {
+  margin: 30px;
+  color: rgb(113,113,113);
+  line-height: 1.5;
+}
+
+
 /* お問い合わせ */
 
 .gray-linebox {
-  background: gray;
+  background: #F2F2F2;
   padding: 100px 0;
 }
 
 .contact-box {
   width: 70%;
   margin: 40px auto;
-  background: gray;
+  /* background: #F2F2F2; */
   margin-bottom: 20px;
 }
 
@@ -103,30 +200,32 @@ header > nav > ul {
 .contact-box > textarea {
   margin-top: 5px;
   width: 100%;
+  border: 1px solid rgb(213,213,213);
 }
 
 
-/* ボタン */
-.button {
+/* 送信ボタン */
+.blue-button {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
 
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 200px;
   border:1px solid #38aef0;
   color: #38aef0;
   border-radius: 20px;
+  outline:0;
 }
 
-.button:hover {
+.blue-button:hover {
   transition: 0.5s;
   outline: none;
   background-color: #38aef0;
   color: white;
 }
 
-.button:active {
+.blue-button:active {
   transition: 0s;
   box-shadow: none;
   background-color: white;
@@ -134,22 +233,29 @@ header > nav > ul {
 }
 
 
-/* ぼやっとした線消す */
-.button:focus {
-	outline:0;
-}
-
-
 /* footer */
 footer {
   width: 100%;
-  height: 80px;
-  background-color: rgb(0,0,0);
+  height: 100px;
+  background-color: rgb(31,31,31);
   color: rgb(255,255,255);
 }
 
-footer p {
+footer > h1 {
   text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.logo > img {
+  width: 200px;
+  height: 40px;
 }
 
 /* color */
