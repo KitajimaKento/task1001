@@ -1,3 +1,4 @@
+/* ヘッダー部分 */
 header {
   background: white;
   height: 100%;
@@ -11,7 +12,6 @@ header {
   width: 250px;
   height: 50px;
   margin: 10px;
-
 }
 
 .list02 {
@@ -38,18 +38,26 @@ margin-right: 30px;
 }
 
 
-/* main-image */
-.main-image > img {
+
+/* main-image部分 */
+.main-image img {
   width: 100%;
   margin-bottom: -2px;
 }
 
+/* .main-image > img:hover {
+  opacity: 0;
+  transition: 0.9s;
+} */
 
-/* サービス一覧 */
+
+
+/* サービス一覧部分 */
 .blue-linebox {
   background-color: rgb(51,189,209);
   background-image: repeating-linear-gradient(45deg,rgb(49,182,198), rgb(49,182,198) 3px,transparent 0, transparent 6px);
   padding: 100px 0;
+  /* overflow: scroll; /* はみ出た部分をスクロールで表示 */
 }
 
 .box {
@@ -82,9 +90,15 @@ margin-right: 30px;
 }
 
 .service-content img {
-  width: 330px;
-  height: 330px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.service-content img:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .service-content > p {
@@ -134,8 +148,9 @@ margin-right: 30px;
   display: flex;
 }
 
-/* お客様の声 */
 
+
+/* お客様の声部分 */
 
 .white-linebox {
   background: white;
@@ -153,8 +168,8 @@ margin-right: 30px;
 }
 
 .customer-voice + img {
-  width: 230px;
-  height: 230px;
+  width: 50%;
+  height: auto;
   margin-top: 20px;
   border-radius: 50%;
   display: block;
@@ -177,8 +192,7 @@ margin-right: 30px;
 }
 
 
-/* お問い合わせ */
-
+/* お問い合わせ部分 */
 .gray-linebox {
   background: #F2F2F2;
   padding: 100px 0;
@@ -187,7 +201,6 @@ margin-right: 30px;
 .contact-box {
   width: 70%;
   margin: 40px auto;
-  /* background: #F2F2F2; */
   margin-bottom: 20px;
 }
 
@@ -204,7 +217,7 @@ margin-right: 30px;
 }
 
 
-/* 送信ボタン */
+/* 送信ボタン部分 */
 .blue-button {
   display: block;
   margin: 0 auto;
@@ -233,7 +246,7 @@ margin-right: 30px;
 }
 
 
-/* footer */
+/* footer部分 */
 footer {
   width: 100%;
   height: 100px;
@@ -257,6 +270,7 @@ footer > h1 {
   width: 200px;
   height: 40px;
 }
+
 
 /* color */
 
